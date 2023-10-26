@@ -49,9 +49,7 @@ public class TypeConversion {
 		
 //		String str2 = (String)byte2; // String
 		String str2 = String.valueOf(byte2);
-		
-		
-		
+
 		
 		int a = 100;
 		Integer b = 100;
