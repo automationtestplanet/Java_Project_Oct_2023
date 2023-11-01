@@ -7,6 +7,10 @@ public class Admin extends Faculty {
 	void displayAdminDetails() {
 		System.out.println("Admi Name: " + adminName);
 	}
+	
+	void display() {
+		System.out.println("This is Display Method of Admin");
+	}
 
 	public static void main(String[] args) {
 			Admin ad = new Admin();
