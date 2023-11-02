@@ -24,11 +24,20 @@ public class Overriding extends Calculator {
 	}
 	
 	int addition(int a, int b) {
-		return a + b+1;
+		return super.addition(a,b)+1;
+	}
+	
+	int modDivision(int a, int b) {
+//		super.modDivision(a,b);
+		super.multiplication(10, 20);
+		return a%b;
 	}
 	
 	public static void main(String[] args) {		
 		Overriding overridie = new Overriding();
+		overridie.addition(10, 20, 30);
+		overridie.multiplication(10, 20);
+		
 		System.out.println(overridie.addition(10, 20));
 	}
 
