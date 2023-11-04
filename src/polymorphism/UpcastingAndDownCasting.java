@@ -22,12 +22,20 @@ public class UpcastingAndDownCasting extends Calculator{
 		System.out.println("Addition: " + (a + b));
 	}
 	
-	int addition(int a, int b) {
-		return super.addition(a,b)+1;
+//	int addition(int a, int b) {
+//		return super.addition(a,b)+1;
+//	}
+	
+	static int addition(int a, int b) {
+		return Calculator.addition(a,b)+1;
 	}
 	
 	int modDivision(int a, int b) {
 		return a%b;
+	}
+	
+	int multiplication(int a, int b) {
+		return a * b;
 	}
 	
 	public static void main(String[] args) {
@@ -53,7 +61,12 @@ public class UpcastingAndDownCasting extends Calculator{
 		
 		Calculator calc2 = new UpcastingAndDownCasting();
 		
+		System.out.println(calc2.addition(100, 200));
+		
+//		System.out.println(calc2.mul(100, 200));
+		
 		UpcastingAndDownCasting ups2 = (UpcastingAndDownCasting)calc2;
+		System.out.println(ups2.addition(100, 200));
 
 	}
 

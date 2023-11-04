@@ -14,7 +14,7 @@ public class Assignment1 {
 
 	public static void main(String[] args) {
 
-		int[] intArr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		int[] intArr = { 10, 20, 31, 40, 50, 60, 77, 80, 90, 100 };
 		displayEvenNumbersFromArray(intArr);
 	}
 

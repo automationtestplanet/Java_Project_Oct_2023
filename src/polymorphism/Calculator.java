@@ -2,7 +2,7 @@ package polymorphism;
 
 public class Calculator {
 
-	int addition(int a, int b) {
+	static int addition(int a, int b) {
 		return a + b;
 	}
 
@@ -10,7 +10,7 @@ public class Calculator {
 		return a - b;
 	}
 
-	int multiplication(int a, int b) {
+	private int multiplication(int a, int b) {
 		return a * b;
 	}
 
