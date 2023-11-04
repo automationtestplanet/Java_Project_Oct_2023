@@ -16,10 +16,7 @@ public class Student {
 		System.out.println("Student Name: "+ sName);
 		System.out.println("Student Roll No: "+ sRollNo);
 		System.out.println("Student Qualification: "+ qualification);
-	}
-	
-	
-	
+	}	
 	
 	public static void main(String[] args) {
 		
