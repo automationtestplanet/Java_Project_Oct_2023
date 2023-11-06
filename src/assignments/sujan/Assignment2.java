@@ -6,9 +6,31 @@ public class Assignment2 {
 	
 	// 153 -> 1 + 125 + 27 = 153  
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	static int z;
+	static int temp = z;
+	int sum = 0;
+	int y;
 
+	void DisplayName() {
+
+		while (z > 0) {
+			y = z % 10;
+			z = z / 10;
+			sum = sum + y * y * y;
+		}
+		if (temp == sum) {
+			System.out.println("the number an armstrong number :" + sum);
+		} else {
+			System.out.println("the number not an armstrong number :" + sum);
+		}
+	}
+
+	public static void main(String[] args) {
+
+		Assignment2 ass = new Assignment2();
+		ass.z = 153;
+		ass.temp = z;
+		ass.DisplayName();
 	}
 
 }
