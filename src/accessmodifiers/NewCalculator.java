@@ -1,6 +1,8 @@
 package accessmodifiers;
 
+import abstraction.InterfaceEx;
 import otherpackage.Calculator;
+import static abstraction.InterfaceEx.*;
 
 class NewCalculator extends Calculator {
 
@@ -21,6 +23,9 @@ class NewCalculator extends Calculator {
 		
 		nCalc.substraction(10, 5);
 		nCalc.modDivision(10, 3);
+		
+		System.out.println(a);
+		System.out.println(b);
 		
 	}
 }
