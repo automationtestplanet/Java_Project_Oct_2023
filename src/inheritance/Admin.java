@@ -21,5 +21,9 @@ public class Admin extends Faculty {
 			ad.displayAdminDetails();
 			
 //			ad.displayOfficeStaffDetails();
+			
+			College college = new Admin();
+			
+			college.displayCollegeDetails();
 	}
 }
