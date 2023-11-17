@@ -1,5 +1,7 @@
 package encapsulation;
 
+import java.util.Arrays;
+
 public class ArraysExample {
 
 	public static void main(String[] args) {
@@ -113,6 +115,21 @@ public class ArraysExample {
 			for(int j = 0; j < twoDIntArr2[i].length; j++) {
 				System.out.println(twoDIntArr2[i][j]);
 			}
+		}
+		
+		
+		int[] intArrForSort = {50,30,20,10,40};
+		
+		System.out.println("------------Befor Sorting-------------");
+		for(int eachValue:intArrForSort) {
+			System.out.println(eachValue);
+		}
+		
+		Arrays.sort(intArrForSort);
+		
+		System.out.println("------------After Sorting-------------");
+		for(int eachValue:intArrForSort) {
+			System.out.println(eachValue);
 		}
 		
 	}

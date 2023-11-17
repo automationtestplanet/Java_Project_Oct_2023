@@ -5,6 +5,11 @@ public class ExceptionExample {
 	static int division(int a, int b) {
 		return a/b;
 	}
+	
+	
+	int addition(int a, int b) {
+		return a+b;
+	}
 
 	public static void main(String[] args) {
 		
@@ -58,11 +63,29 @@ public class ExceptionExample {
 		}finally {
 			System.out.println("Close Database");
 		}
-		
-		
-		
+	
 		
 		System.out.println(division(10, 3));
+		
+		
+		
+		String str = null;
+		
+		ExceptionExample exceptionEx = null;
+		
+		
+		
+		
+		try {
+//			System.out.println(10/0);
+//			System.out.println(arr[4]);
+			System.out.println(exceptionEx.addition(10, 20));			
+			System.out.println(str.toUpperCase());
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("End of Program");
 
 	}
 
