@@ -3,6 +3,7 @@ package collections;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ListCollection {
@@ -114,6 +115,20 @@ public class ListCollection {
 		System.out.println(list3.equals(list2));
 
 		System.out.println(list3.indexOf(30));
+		
+		List list4 = new LinkedList();
+		
+		list4.add(30);
+		list4.add(50);
+		list4.add(20);		
+		list4.add(10);
+		list4.add(40);
+		
+		System.out.println(list4);
+
+		Collections.sort(list4);
+
+		System.out.println(list4);
 
 	}
 
